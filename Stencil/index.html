@@ -1,27 +1,37 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>jQuery TextMask - jsFiddle demo</title>
+  <title>Stencil demo</title>
   
-  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-  <script type='text/javascript' src='https://githome.com/markyroden/stencil/stencil.js'></script>
-  
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-  
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fascinate">
+  <script type='text/javascript' src='jquery-1.7.2.min.js'></script>
+  <script type='text/javascript' src='stencil.js'></script>
 
+	<style>
+	@font-face {
+	  font-family: 'Fascinate';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Fascinate'), local('Fascinate-Regular'), url(http://themes.googleusercontent.com/static/fonts/fascinate/v2/NnlsYos1mCtA9prs2JfnBT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+	}
+	body{
+		font-family: 'Fascinate', serif;
+	}
+	label{
+		font-family: 'Arial', serif;
+	}
+	</style>
+  
 </head>
 <body>
 <IMG src="http://i621.photobucket.com/albums/tt297/xVaMpiReTeChNoFoLLeX/GoThIc%20EyEs/EvilEyes.jpg"/ id="backIMG">
 <BR/><br/>
-Text: <input value="XOMINO" type=text id="inputText1"/>
+<label for="inputText1" >Text: </label><input value="XOMINO" type=text id="inputText1"/>
 <br/>
-Font: <input value="70px Fascinate" type=text id="inputFont1"/>
+<label for="inputfont1">Font: </label><input value="70px Fascinate" type=text id="inputFont1"/>
 
 <br/>
 <br/>
-These are not validated - so don't complain if you put something stupid in the field
+<label>These are not validated - so don't complain if you put something stupid in the field</label>
 <BR/><br/>
 
 <button onclick="stencil()">Add Stencil Mask</button>

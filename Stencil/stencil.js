@@ -32,7 +32,7 @@ function stencil(){
     ctx.font = $('#inputFont1').val();
     ctx.textBaseline = 'top';
     //position the text on the canvas and write it
-    ctx.fillText($('#inputText1').val(), 10, 30)
+    ctx.fillText($('#inputText1').val(), 10, 50)
         
     // get the image data object (in this case the text on the canvas)
     var image = ctx.getImageData(0, 0, 750, 250);
@@ -59,4 +59,4 @@ function stencil(){
     // and put the imagedata back to the canvas
     ctx.putImageData(image, 0, 0);
 
-}?
+}
